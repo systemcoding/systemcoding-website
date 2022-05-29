@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    font-size: 27px;
+    margin-left: 100px;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 15px;
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline white;
+}
+
+.top-header {
+    background-image: url("/images/header-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.top-header .top-header-greeting {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 56px;
+}
+
+.top-header .top-header-about-website {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.btn-container {
+    margin-top: 23px;
+    margin-bottom: 56px;
+}
+
+.btn-container button {
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    padding: 13px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-container p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white !important;
+}
+
+.btn-container .yt-btn {
+    background-color: rgb(229, 62, 62);
+}
+
+.btn-container .github-btn {
+    background-color: black;
+}
+
+/* Each Blog Style  */
+.blog-section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.blog {
+    margin-left: 20px;
+}
+
+.blog img {
+    margin-top: 20px;
+    width: 478px;
+    height: 268px;
+    border-radius: 10px;
+}
+
+.blog .blog-date {
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.blog .blog-previewDesc {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.blog .blog-readmore-btn {
+    padding: 10px;
+    color: white;
+    background-color: steelblue;
+    border: none;
+    border-radius: 10px;
+    width: 110px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.blog-footer {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-footer .copyright-text {
+    margin-bottom: 7px;
+}
+
+.blog-footer .source-code-redirect {
+    text-decoration: underline white;
+    color: white;
+    font-weight: bolder;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>System Coding | Homepage</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h2 class="title">System Coding</h2>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/blogs.html">Blogs</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Top header -->
+    <div class="top-header">
+      <h2 class="top-header-greeting">Hi There!</h2>
+      <p class="top-header-about-website">
+        I like to code, talk about Linux, Terminal and writing some blogs <br />
+        about my videos on YT. Video ideas and blogs from other <br />
+        people are always welcome. Feel free to contact me! <br />
+      </p>
+      <!-- Button Container -->
+      <div class="btn-container">
+        <!-- Youtube Button -->
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UC9v7BJKslCvzxRoUi7fyscg"
+        >
+          <button class="yt-btn">
+            <p>
+              <i class="fa fa-youtube-play" style="color: white"></i>
+              YouTube
+            </p>
+          </button>
+        </a>
+        <!--Github Button  -->
+        <a target="_blank" href="https://github.com/systemcoding">
+          <button class="github-btn">
+            <p><i class="fa fa-github" style="color: white"></i> Github</p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- Actual Blog Content -->
+    <div class="blog-section">
+      <!-- First Blog -->
+      <div class="blog">
+        <img src="/images/neovim-video.png" />
+        <p class="blog-date">Posted on 9th January 2022</p>
+        <h2 class="blog-title">Why I Switched To Neovim?</h2>
+        <p class="blog-previewDesc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Sequi perferendis molestiae non nemo doloribus. <br />
+          Doloremque, nihil! At eaatque quidem! <br />
+        </p>
+        <a href="/pages/posts/neovim.md">
+          <button class="blog-readmore-btn">Read More</button>
+        </a>
+      </div>
+      <!-- Second Blog -->
+      <div class="blog">
+        <img src="/images/linux-setup-dev.png" />
+        <p class="blog-date">Posted on 6th Feb 2022</p>
+        <h2 class="blog-title">Setup Coding Environment On Linux</h2>
+        <p class="blog-previewDesc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Sequi perferendis molestiae non nemo doloribus. <br />
+          Doloremque, nihil! At eaatque quidem! <br />
+        </p>
+        <a href="/pages/posts/linux-setup.md">
+          <button class="blog-readmore-btn">Read More</button>
+        </a>
+      </div>
+    </div>
+    <footer class="blog-footer">
+      <p class="copyright-text">Copyright © 2021-2022</p>
+      <p>
+        The source code for this website can be found on
+        <a
+          class="source-code-redirect"
+          target="_blank"
+          href="https://github.com/systemcoding/systemcoding-website"
+          >Github</a
+        >
+        . User-submitted <br />
+        contributions to the site are welcome.
+      </p>
+    </footer>
+  </body>
+</html>
