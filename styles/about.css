@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* Global styles */
+
+:root {
+    --website-background: #24292e;
+    --navbar-background: #0d1117;
+    --seperator-color: #2a2e35;
+}
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 html,
 body {
     font-family: 'Poppins', sans-serif;
+    height: 100%;
+    position: relative;
 }
 
 .navbar {
-    background-color: #000;
     width: 100%;
     padding: 18px;
+    background-color: var(--website-background);
 }
 
 .navbar .container {
@@ -28,10 +38,13 @@ body {
     margin: auto;
 }
 
+.navbar .container .title-link {
+    text-decoration: none;
+}
+
 .navbar .container .title {
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bolder;
-    margin-left: 100px;
     color: white;
 }
 
@@ -54,7 +67,6 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-right: 100px;
 }
 
 .navbar-links li {
@@ -63,7 +75,7 @@ body {
 
 .navbar-links li a {
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     color: white;
     padding: 0.5rem;
@@ -73,52 +85,26 @@ body {
     text-decoration: underline white;
 }
 
-.blog-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #0d1117;
+.about-wrapper {
+    background-color: var(--navbar-background);
+    width: 100%;
     color: #fff;
 }
 
-.blog-content-wrapper .container {
+.about-wrapper .container {
     max-width: 860px;
-    margin: auto;
-    padding: 20px;
-}
+    margin-left: auto;
+    margin-right: auto;
 
-.blog-content-wrapper .blog-content-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.blog-content-wrapper .blog-content-image {
-    width: 100%;
-}
-
-.author-info {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
 }
 
-.author-info .blog-author-name {
-    margin-top: 13px;
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.blog-content-wrapper .blog-profile-picture {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.blog-content .begin-title {
+.about-wrapper .container .about-title {
     margin-top: 20px;
-    font-size: 20px;
-    line-height: 35px;
-    margin-bottom: 20px;
-}
-
-.blog-content .quick-note {
-    font-size: 20px;
+    font-size: 45px;
     font-weight: bolder;
 }
