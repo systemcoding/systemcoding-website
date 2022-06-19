@@ -2,24 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>System Coding | Homepage</title>
+  <link href="styles/index.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navbar -->
-
-  <!-- Top header -->
-  <header>
-
-    <nav class="navbar">
-      <div class="container">
-        <a class="title-link" href="/">
-          <h2 class="title">System Coding</h2>
+  <main class="page-wrapper">
+    <div>
+      <nav class="navbar">
+        <a class="home-link" href="/">
+          <h2 class="brand-title">System Coding</h2>
         </a>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
@@ -29,104 +24,73 @@
         <div class="navbar-links">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/pages/blogs.html">Blogs</a></li>
             <li><a href="/pages/about.html">About</a></li>
+            <li><a href="mailto:systemcodingyt@gmail.com">Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <div class="top-header">
-      <h2 class="top-header-greeting">Hi There!</h2>
-      <p class="top-header-about-website">
-        I like to code, talk about Linux, Terminal and writing some blogs <br />
-        about my videos on YT. Video ideas and blogs from other <br />
-        people are always welcome. Feel free to contact me! <br />
-      </p>
-
-      <!-- Button Container -->
-      <div class="btn-container">
-
-        <!-- Youtube Button -->
-        <a target="_blank" href="https://www.youtube.com/channel/UC9v7BJKslCvzxRoUi7fyscg">
-          <button class="yt-btn">
-            <p>
-              <i class="fa fa-youtube-play" style="color: white"></i>
-              YouTube
-            </p>
-          </button>
-        </a>
-
-        <!--Github Button  -->
-        <a target="_blank" href="https://github.com/systemcoding">
-          <button class="github-btn">
-            <p><i class="fa fa-github" style="color: white"></i> Github</p>
-          </button>
-        </a>
-
-      </div>
-    </div>
-  </header>
-
-  <!-- Blog Content -->
-  <section class="blog-section">
-    <!-- Blog Title -->
-    <h1 class="blog-section-header">Blogs</h1>
-    <!-- Container -->
-    <div class="container">
-
-      <!-- Individual Blog (1) -->
-      <div class="blog">
-        <img src="/images/neovim-video.png" />
-        <div class="blog-about-content-wrapper">
-          <p class="blog-category-date">Editors . 9th January 2022</p>
-          <h2 class="blog-title">Why I Switched To Neovim?</h2>
-          <p class="blog-previewDesc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-            Sequi perferendis molestiae non nemo doloribus. <br />
-            Doloremque, nihil! At eaatque quidem! <br />
-          </p>
-          <a class="blog-readmore-btn-link" href="/pages/posts/neovim.html">
-            <p class="blog-readmore-btn">Read More →</p>
-          </a>
+      <div class="recent-blog">
+        <img width="500" class="recent-blog-img" src="./images/yt-thumbnails/lunarvim-yt.png" />
+        <div class="blog-preview">
+          <p><strong>Editors </strong>. 14 Jun 2022</p>
+          <h2 class="recent-blog-title">LunarVim is an extensible, and fast IDE layer for Neovim</h2>
+          <div class="recent-blog-description">
+            Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew
+            there was still room for improvement and one of them was CSS loading. I will walk you through the process
+            and
+            show you how you can improve your load times as well.
+          </div>
+          <div class="author-info">
+            <div class="author-profile-container">
+              <img style="margin-right: 10px;border-radius: 15px;" src="images/profile.png" width="30"
+                class="author-image" />
+              <p>System Coding</p>
+            </div>
+            <div class="readmore-link-container">
+              <a class="readmore" href="/posts/lunarvim.html">Read Full</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Second Blog -->
-      <div class="blog">
-        <img src="/images/linux-setup-dev.png" />
-        <div class="blog-about-content-wrapper">
-          <p class="blog-category-date">Linux . 6th Feb 2022</p>
-          <h2 class="blog-title">Setup Coding Environment On Linux</h2>
-          <p class="blog-previewDesc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-            Sequi perferendis molestiae non nemo doloribus. <br />
-            Doloremque, nihil! At eaatque quidem! <br />
-          </p>
-          <a class="blog-readmore-btn-link" href="/pages/posts/linux-setup.html">
-            <p class="blog-readmore-btn">Read More →</p>
-          </a>
+      <section class="grid-container">
+        <!-- Individual Blogs -->
+        <div class="blog">
+          <img width="100%" class="blog-image" src="./images/yt-thumbnails/i3-setup.png" />
+          <div class="blog-preview">
+            <p class="blog-type"><strong>DE & WM's </strong>. 27 Mar 2022</p>
+            <h2 class="blog-title">My i3wm setup</h2>
+            <div class="blog-description">
+              The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to
+              design web pages without having to use floats and positioning.
+            </div>
+            <a class="readmore" href="/posts/i3-twm-setup.html">Read Full</a>
+          </div>
         </div>
-      </div>
 
+        <div class="blog">
+          <img width="100%" class="blog-image" src="./images/yt-thumbnails/neovim-lsp.png" />
+          <div class="blog-preview">
+            <p class="blog-type"><strong>Editors </strong>. 7 Mar 2022</p>
+            <h2 class="blog-title">New Neovim Configs!</h2>
+            <div class="blog-description">
+              Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and
+              background color of an element with the color and background properties.
+            </div>
+            <a class="readmore" href="/posts/neovim-lsp-setup.html">Read Full</a>
+          </div>
+        </div>
+      </section>
 
-    </div>
-    </div>
-    <a href="pages/blogs.html">
-      <button class="more-blogs-dropdown">More Blogs ↓</button>
-    </a>
-  </section>
-  <section class="blog-footer">
-    <div class="container">
-      <div class="seperator"></div>
-      <p class="copyright-text">Copyright © 2021-2022</p>
-      <p>
-        The source code for this website can be found on
-        <a class="source-code-redirect" target="_blank"
-          href="https://github.com/systemcoding/systemcoding-website">Github</a>
-        . User-submitted <br />
-        contributions to the site are welcome.
-      </p>
-    </div>
-  </section>
+      <!-- Footer Section -->
+      <footer>
+        <div>© 2021-2022 System Coding</div>
+        <a href="https://github.com/systemcoding/systemcoding-website" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </footer>
+  </main>
 </body>
+
+</html>

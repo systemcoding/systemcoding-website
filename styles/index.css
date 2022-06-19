@@ -1,68 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* Global styles */
-
-:root {
-    --website-background: #24292e;
-    --navbar-background: #0d1117;
-    --seperator-color: #2a2e35;
-}
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,
-body {
-    font-family: 'Poppins', sans-serif;
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #161618;
+  color: #fff;
+  max-width: 1100px;
+  margin: auto;
 }
-
-header {
-    background-image: url("/images/header-background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Navbar Styles */
 
 .navbar {
-    width: 100%;
-    padding: 18px;
-}
-
-.navbar .container {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
+.navbar .home-link {
+  text-decoration: none;
+  color: #fff;
 }
 
-.navbar .container .title-link {
-    text-decoration: none;
-}
-
-.navbar .container .title {
+.brand-title {
     font-size: 30px;
-    font-weight: bolder;
-    color: white;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    margin: .5rem;
 }
 
 .navbar-links {
@@ -81,172 +48,111 @@ header {
 
 .navbar-links li a {
     display: block;
-    font-size: 22px;
     text-decoration: none;
-    color: white;
-    padding: 0.5rem;
+    padding: 0.6rem;
+    font-size: 20px;
+    color: #fff;
 }
 
 .navbar-links li a:hover {
-    text-decoration: underline white;
+    text-decoration: underline #fff;
 }
 
-/* Styles for top header */
-
-.top-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
     flex-direction: column;
-    color: white;
-    position: relative;
-    height: 400px;
-    text-align: center;
-    padding: 0 100px;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-.top-header .top-header-greeting {
-    font-size: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.top-header .top-header-about-website {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-.btn-container {
-    margin-top: 23px;
-}
-
-.btn-container button {
-    width: 200px;
-    border-radius: 15px;
-    border: none;
-    padding: 13px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.btn-container p {
-    font-size: 15px;
-    font-weight: bolder;
-    color: white !important;
-}
-
-.btn-container .yt-btn {
-    background-color: rgb(229, 62, 62);
-}
-
-.btn-container .github-btn {
-    background-color: black;
-}
-
-/* Each Blog Style  */
-.blog-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    background-image: url("../images/blog-wrapper.png");
-    color: white;
-}
-
-.blog-section .blog-section-header {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-.blog-section .container {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
-    gap: 2em;
-    padding: 2rem;
-}
-
-/* Individual blog style */
-.blog {
-    background: var(--seperator-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.38);
-    padding: 10px;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
     border-radius: 10px;
 }
 
-.blog img {
-    width: 100%;
-    border: none;
+.recent-blog {
+  margin-top: 40px;
+  display: flex;
 }
 
-.blog .blog-about-content-wrapper .blog-category-date {
-    margin-top: 3px;
-    margin-bottom: 3px;
+.recent-blog .recent-blog-img {
+  margin-right: 20px;
 }
 
-.blog .blog-about-content-wrapper .blog-previewDesc {
-    line-height: 30px;
-    font-weight: lighter;
+.recent-blog .blog-preview .recent-blog-title {
+  margin-top: 5px;
+  margin-bottom: 6px;
+  font-weight: bolder;
 }
 
-.blog .blog-about-content-wrapper .blog-readmore-btn-link {
-    text-decoration: none;
+.recent-blog .blog-preview .recent-blog-description {
+  line-height: 30px;
+  font-size: 16px;
 }
 
-.blog .blog-about-content-wrapper .blog-readmore-btn-link:hover {
-    text-decoration: underline #f5f5f5;
-    transition: 0.3s;
+.author-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
 }
 
-.blog .blog-about-content-wrapper .blog-readmore-btn {
-    color: #1473E6;
-    margin-top: 4px;
-    cursor: pointer;
+.author-info .author-profile-container {
+  display: flex;
 }
 
-
-/* More Blogs Dropdown button */
-.blog-section .more-blogs-dropdown {
-    padding: 20px;
-    font-size: 20px;
-    font-weight: bolder;
-    cursor: pointer;
-    background-color: var(--navbar-background);
-    border: none;
-    color: white;
-    border-radius: 25px;
+.author-info .readmore-link-container .readmore {
+  text-decoration: underline #fff;
+  color: #fff;
 }
 
-/* Footer Section */
-.blog-footer {
-    bottom: 0px;
-    background-color: var(--navbar-background);
-    color: #fff;
-    padding: 20px;
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  gap: 2em;
+  padding: 2rem;
+  margin-top: 30px;
 }
 
-.blog-footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
+.grid-container .blog {
+  display: flex;
+  flex-direction: column;
 }
 
-.blog-footer .seperator {
-    background-color: white;
-    height: 1px;
+.blog .blog-preview .blog-type {
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 
-.blog-footer .source-code-redirect {
-    text-decoration: underline white;
-    color: white;
-    font-weight: bolder;
+.blog-preview .blog-title {
+  margin-bottom: 5px;
+}
+
+.blog-preview .blog-description {
+  line-height: 30px;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.blog-preview .readmore {
+  text-decoration: underline #fff;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+footer a {
+  margin-left: 10px;
+  color: #000;
 }
