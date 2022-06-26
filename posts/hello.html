@@ -1,29 +1,77 @@
-<h1 id="md2html">md2html</h1>
-<h2 id="usage">usage</h2>
-<p>授業資料作成支援スクリプト。自分専用。</p>
-<p>ローカルに</p>
-<pre><code>markdown/\*.md
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>hello</title>
+    <style>
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+      div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+      ul.task-list {
+        list-style: none;
+      }
+    </style>
+    <link rel="stylesheet" href="dummy.css" />
+  </head>
+  <body>
+    <h1 id="md2html">md2html</h1>
+    <h2 id="usage">usage</h2>
+    <p>授業資料作成支援スクリプト。自分専用。</p>
+    <p>ローカルに</p>
+    <pre><code>markdown/\*.md
 public/</code></pre>
-<p>のフォルダがある前提で、 markdown フォルダ中の md ファイルを引数に
-md2html を呼び出すと、 html に変換して public フォルダにセーブ、
-そのファイルを bootstrap で脚色する。</p>
-<ul>
-<li>pandoc で書き出したファイルに dummy でマークを入れておき、</li>
-<li>それを sed で cdn のリンクに書き換え、</li>
-<li>ついでに <code>&lt;div class="container"&gt; ~ &lt;/div&gt;</code>
-で囲む。</li>
-<li>table を
-<code>&lt;div class="table-responsive"&gt; ~ &lt;/div&gt;</code>
-で囲み、 table-striped table-hover の属性を与える。</li>
-<li>mobile-first、 <code>&lt;meta name='viewport'...&gt;</code> を
-<code>&lt;head&gt;</code> の下に差し込む。</li>
-</ul>
-<h2 id="update">UPDATE</h2>
-<ul>
-<li>[2017-04-29] mobile first</li>
-<li>[2017-04-30] 複数の md ファイル</li>
-<li>[2017-08-17] markdown, public をデフォルト値として与えよう。
-コマンドラインのオプションでデフォルト以外を取れるように。</li>
-</ul>
-<hr />
-<p>hkimura, 2017-04-23.</p>
+    <p>
+      のフォルダがある前提で、 markdown フォルダ中の md ファイルを引数に md2html
+      を呼び出すと、 html に変換して public フォルダにセーブ、 そのファイルを
+      bootstrap で脚色する。
+    </p>
+    <ul>
+      <li>pandoc で書き出したファイルに dummy でマークを入れておき、</li>
+      <li>それを sed で cdn のリンクに書き換え、</li>
+      <li>
+        ついでに
+        <code>&lt;div class="container"&gt; ~ &lt;/div&gt;</code> で囲む。
+      </li>
+      <li>
+        table を
+        <code>&lt;div class="table-responsive"&gt; ~ &lt;/div&gt;</code>
+        で囲み、 table-striped table-hover の属性を与える。
+      </li>
+      <li>
+        mobile-first、 <code>&lt;meta name='viewport'...&gt;</code> を
+        <code>&lt;head&gt;</code> の下に差し込む。
+      </li>
+    </ul>
+    <h2 id="update">UPDATE</h2>
+    <ul>
+      <li>[2017-04-29] mobile first</li>
+      <li>[2017-04-30] 複数の md ファイル</li>
+      <li>
+        [2017-08-17] markdown, public をデフォルト値として与えよう。
+        コマンドラインのオプションでデフォルト以外を取れるように。
+      </li>
+    </ul>
+    <hr />
+    <p>hkimura, 2017-04-23.</p>
+  </body>
+</html>
